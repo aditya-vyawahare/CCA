@@ -14,7 +14,7 @@ def run_script():
 def user():
     if request.method=='POST':
         run_script()
-    
+        return ''
     if request.method=='GET':
         return str(socket.gethostbyname(socket.gethostname()))
     
