@@ -5,10 +5,7 @@ import socket
 app = Flask(__name__)
 
 def run_script():
-    try:
-        Popen(['python3','stress_cpu.py'])
-    except:
-        print('Error coudnt run stress_cpu.py')
+    Popen(['python3','stress_cpu.py'])
 
 @app.route('/',methods=['GET','POST'])
 def user():
