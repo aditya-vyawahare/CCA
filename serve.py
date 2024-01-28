@@ -14,7 +14,6 @@ def run_script():
 def user():
     if request.method=='POST':
         run_script()
-        return jsonify({'message': 'Running Script stress_cpu.py' })
     
     if request.method=='GET':
         return str(socket.gethostbyname(socket.gethostname()))
